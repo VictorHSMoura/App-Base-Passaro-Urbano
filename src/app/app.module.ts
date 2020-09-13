@@ -4,7 +4,7 @@ import { registerLocaleData } from '@angular/common'
 import localePtBr from '@angular/common/locales/pt'
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from './app-routing.module';
 
@@ -45,7 +45,8 @@ registerLocaleData(localePtBr);
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
+    // FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(ROUTES)
   ],
   providers: [ {provide: LOCALE_ID, useValue: 'pt-Br'}],

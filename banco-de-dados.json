@@ -276,6 +276,20 @@
       "complemento": "Casa A",
       "formaPagamento": "debito",
       "id": 13
+    },
+    {
+      "endereco": "Rua ABC",
+      "numero": "32",
+      "complemento": "Casa 3",
+      "formaPagamento": "dinheiro",
+      "id": 14
+    },
+    {
+      "endereco": "Rua Juazeiro",
+      "numero": "420",
+      "complemento": "Casa A",
+      "formaPagamento": "dinheiro",
+      "id": 15
     }
   ]
 }
