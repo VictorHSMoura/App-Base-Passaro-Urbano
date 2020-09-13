@@ -262,6 +262,20 @@
       "complemento": "Casa 420",
       "formaPagamento": "debito",
       "id": 11
+    },
+    {
+      "endereco": "Rua José da Silva",
+      "numero": "500",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "id": 12
+    },
+    {
+      "endereco": "Rua Maria das Dores",
+      "numero": "42",
+      "complemento": "Casa A",
+      "formaPagamento": "debito",
+      "id": 13
     }
   ]
 }
