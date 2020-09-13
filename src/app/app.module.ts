@@ -4,6 +4,7 @@ import { registerLocaleData } from '@angular/common'
 import localePtBr from '@angular/common/locales/pt'
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { ROUTES } from './app-routing.module';
 
@@ -21,6 +22,7 @@ import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component'
+
 
 registerLocaleData(localePtBr);
 
@@ -43,6 +45,7 @@ registerLocaleData(localePtBr);
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forChild(ROUTES)
   ],
   providers: [ {provide: LOCALE_ID, useValue: 'pt-Br'}],
