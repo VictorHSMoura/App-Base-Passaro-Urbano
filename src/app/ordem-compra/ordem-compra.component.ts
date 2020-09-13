@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { OrdemCompraService } from '../ordem-compra.service'
-import { Pedido } from '../shared/pedido.model'
+import { OrdemCompraService } from '../ordem-compra.service';
+import { Pedido } from '../shared/pedido.model';
+import { CarrinhoService } from '../carrinho.service';
+import { ItemCarrinho } from '../shared/item-carrinho.model';
 
 @Component({
   selector: 'app-ordem-compra',
@@ -19,11 +21,13 @@ export class OrdemCompraComponent implements OnInit {
   });
 
   public idPedidoCompra: number;
+  public itensCarrinho: ItemCarrinho[] = []
 
-  constructor(private ordemCompraService: OrdemCompraService) { }
+  constructor(private ordemCompraService: OrdemCompraService, private carrinhoService: CarrinhoService) { }
 
   ngOnInit() {
-    
+    this.itensCarrinho = this.carrinhoService.exibirItens();
+    console.log(this.itensCarrinho);
   }
 
   public confirmarCompra(): void {
